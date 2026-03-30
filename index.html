@@ -238,6 +238,39 @@
     }
 
     window.addEventListener('load', typeLetter);
+// Materials toggle
+const matBtn = document.getElementById('showMaterialsBtn');
+const matList = document.getElementById('materialsList');
+
+matBtn.addEventListener('click', () => {
+  if (matList.style.display === "none" || matList.style.display === "") {
+    matList.style.display = "block";
+  } else {
+    matList.style.display = "none";
+  }
+});
+
+// Form submit
+const form = document.getElementById('materialForm');
+const pdfSection = document.getElementById('pdfSection');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // Simple alert (you can later connect to backend)
+  alert("Thanks " + name + "! Now you can download materials.");
+
+  // Show PDFs
+  pdfSection.style.display = "block";
+
+  // Hide form (optional)
+  form.style.display = "none";
+
+  console.log("User:", name, email);
+});
   </script>
 
 </body>
