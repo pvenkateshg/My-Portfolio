@@ -158,7 +158,26 @@ section h2 {
 
 /* Services */
 .services { border-left:3px solid #ff00cc; padding-left:1rem; margin-top:1rem; }
+.materials-list {
+  display: none;
+  margin-top: 10px;
+}
 
+#materialForm input {
+  display: block;
+  margin: 5px 0;
+  padding: 8px;
+  width: 200px;
+}
+
+#pdfSection a {
+  text-decoration: none;
+  color: blue;
+}
+
+#pdfSection a:hover {
+  text-decoration: underline;
+}
 /* Car Gallery */
 .car-gallery { display:flex; gap:15px; flex-wrap:wrap; margin-top:10px; }
 .car-item { display:flex; flex-direction:column; align-items:center; gap:5px; }
