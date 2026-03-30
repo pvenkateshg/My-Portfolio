@@ -86,7 +86,42 @@
     <h2>Services</h2>
     <div class="services">
       <div><strong>1:</strong> Website Designer</div>
-      <div><strong>2:</strong> Materials</div>
+      <div>
+  <strong>2:</strong> Materials
+  <button id="showMaterialsBtn" class="button">View Materials</button>
+
+  <div class="materials-list" id="materialsList">
+
+    <!-- FORM -->
+    <form id="materialForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button type="submit" class="button">Submit & View Materials</button>
+    </form>
+
+    <!-- PDF LINKS (hidden initially) -->
+    <div id="pdfSection" style="display:none; margin-top:10px;">
+      <ul>
+        <li>
+          <a href="pdfs/thermodynamics.pdf" download>
+            Thermodynamics PDF
+          </a>
+        </li>
+        <li>
+          <a href="pdfs/fluid-mechanics.pdf" download>
+            Fluid Mechanics PDF
+          </a>
+        </li>
+        <li>
+          <a href="pdfs/machine-design.pdf" download>
+            Machine Design PDF
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
       <div>
         <strong>3:</strong> Travels Provider
       <p>
