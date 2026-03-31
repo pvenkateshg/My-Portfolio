@@ -249,6 +249,9 @@ matBtn.addEventListener('click', () => {
     matList.style.display = "none";
   }
 });
+// Form submit
+const form = document.getElementById('materialForm');
+const pdfSection = document.getElementById('pdfSection');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
@@ -256,28 +259,9 @@ form.addEventListener('submit', function(e) {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
 
-  fetch("https://script.google.com/macros/s/AKfycbx7m6iz1YowHRdXplSuEbOAj8QRRK5TosjddV_9hlGfa6SRNzNf1BsyT1pTjMcd5IMv/exec", {
-    method: "POST",
-    body: JSON.stringify({
-      name: name,
-      email: email
-    }),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-  .then(res => res.text())
-  .then(data => {
-    alert("Thanks " + name + "! Now you can download materials.");
+  // Simple alert (you can later connect to backend)
+  alert("Thanks " + name + "! Now you can download materials.");
 
-    pdfSection.style.display = "block";
-    form.style.display = "none";
-  })
-  .catch(err => {
-    alert("Error submitting form");
-    console.log(err);
-  });
-});
 
   // Simple alert (you can later connect to backend)
   alert("Thanks " + name + "! Now you can download materials.");
