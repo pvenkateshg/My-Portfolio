@@ -259,20 +259,21 @@ form.addEventListener('submit', function(e) {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
 
-  // Simple alert (you can later connect to backend)
-  alert("Thanks " + name + "! Now you can download materials.");
+  // 🔥 Data Google Form ki pampadam (→ Sheet lo save avuthundi)
+  fetch("https://docs.google.com/forms/d/e/1FAIpQLSc67zYJJSlpBGBoCo6nGSgyeaEor0MENHcGqRf7ZVYc_r2ZUw/formResponse?usp=pp_url&entry.1120810712=Nani&entry.1358448956=test@gmail.com", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: `entry.1120810712=${name}&entry.1358448956=${email}`
+  });
 
-
-  // Simple alert (you can later connect to backend)
-  alert("Thanks " + name + "! Now you can download materials.");
-
-  // Show PDFs
+  // PDF show
   pdfSection.style.display = "block";
-
-  // Hide form (optional)
   form.style.display = "none";
 
-  console.log("User:", name, email);
+  alert("Details saved & materials unlocked ✅");
 });
   </script>
 
