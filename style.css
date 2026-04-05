@@ -255,21 +255,25 @@ footer { text-align:center; padding:1.5rem; background:rgba(61, 57, 57, 0.9); co
 }
 .view-btn {
   margin-left: 10px;
-  padding: 4px 10px;
-  background: green;
+  padding: 5px 12px;
+  background: linear-gradient(90deg,#00c853,#00e676);
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
   font-size: 0.8rem;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00e676;
 }
 
 .download-btn {
   margin-left: 5px;
-  padding: 4px 10px;
-  background: #3333ff;
+  padding: 5px 12px;
+  background: linear-gradient(90deg,#ff00cc,#3333ff);
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
   font-size: 0.8rem;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff00cc;
 }
 
