@@ -84,72 +84,62 @@
   <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
-    <div class="services">
-      <div><strong>1:</strong> Website Designer</div>
-      <div>
-  <strong>2:</strong> Materials
-  <button id="showMaterialsBtn" class="button">View Materials</button>
+    <section id="services">
+  <h2>Services</h2>
 
-  <div class="materials-list" id="materialsList">
+  <div class="services-container">
 
-    <!-- FORM -->
-    <form id="materialForm">
-      <input type="text" id="name" placeholder="Enter your name" required>
-      <input type="email" id="email" placeholder="Enter your email" required>
-      <button type="submit" class="button">Submit & View Materials</button>
-    </form>
-
-    <!-- PDF LINKS (hidden initially) -->
-    <div id="pdfSection" style="display:none; margin-top:10px;">
-      <ul>
-        <li>
-          <a href="pdfs/thermodynamics.pdf" download>
-            Thermodynamics PDF
-          </a>
-        </li>
-        <li>
-          <a href="pdfs/fluid-mechanics.pdf" download>
-            Fluid Mechanics PDF
-          </a>
-        </li>
-        <li>
-          <a href="pdfs/machine-design.pdf" download>
-            Machine Design PDF
-          </a>
-        </li>
-      </ul>
+    <!-- Website Designer -->
+    <div class="service-card">
+      <h3>Website Designer</h3>
+      <p>
+        I design responsive and professional websites using HTML, CSS, and JavaScript.
+      </p>
     </div>
 
-  </div>
-</div>
-      <div>
-        <strong>3:</strong> Travels Provider
-      <p>
-    We provide a wide range of travel options including 
-    <strong>Dzire, Ertiga, and Jeep</strong> vehicles. <br>
-    Self-drive facilities are also available for your convenience. <br>
-    Our services are accessible across 
-    <strong>Telangana and Andhra Pradesh (Konaseema region)</strong>, 
-    ensuring comfortable and reliable travel for every journey.
-  </p>
-        <button id="showCarsBtn" class="button">Cars</button>
-        <div class="car-gallery" id="carGallery">
-          <div class="car-item">
-            <img src="https://res.cloudinary.com/dntrlt1al/image/upload/v1756622808/DzireWhitemerged-v4_rm1vcn.png" alt="Dzire">
-            <span>Dzire</span>
-          </div>
-          <div class="car-item">
-            <img src="https://res.cloudinary.com/dntrlt1al/image/upload/v1756631257/ertiga-pearl-metallic-arctic-white_hvt9za.png" alt="Ertiga">
-            <span>Ertiga</span>
-          </div>
-          <div class="car-item">
-            <img src="https://res.cloudinary.com/dntrlt1al/image/upload/v1756631606/mahindra-modified-jeep_cr6llr.jpg" alt="Mahindra Jeep">
-            <span>Mahindra Jeep</span>
-          </div>
+    <!-- Materials -->
+    <div class="service-card">
+      <h3>Materials</h3>
+      <button id="showMaterialsBtn" class="button">View Materials</button>
+
+      <div class="materials-list" id="materialsList">
+        <form id="materialForm">
+          <input type="text" id="name" placeholder="Enter your name" required>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <button type="submit" class="button">Submit & View Materials</button>
+        </form>
+
+        <div id="pdfSection" style="display:none;">
+          <ul>
+            <li><a href="pdfs/thermodynamics.pdf" download>Thermodynamics PDF</a></li>
+            <li><a href="pdfs/fluid-mechanics.pdf" download>Fluid Mechanics PDF</a></li>
+            <li><a href="pdfs/machine-design.pdf" download>Machine Design PDF</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Travels -->
+    <div class="service-card">
+      <h3>Travels Provider</h3>
+      <p>Dzire, Ertiga, Jeep available with self-drive & driver.</p>
+
+      <button id="showCarsBtn" class="button">View Cars</button>
+
+      <div class="car-gallery" id="carGallery">
+        <div class="car-item">
+          <img src="https://res.cloudinary.com/dntrlt1al/image/upload/v1756622808/DzireWhitemerged-v4_rm1vcn.png">
+          <span>Dzire</span>
+        </div>
+        <div class="car-item">
+          <img src="https://res.cloudinary.com/dntrlt1al/image/upload/v1756631257/ertiga-pearl-metallic-arctic-white_hvt9za.png">
+          <span>Ertiga</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact">
