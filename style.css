@@ -227,4 +227,30 @@ footer { text-align:center; padding:1.5rem; background:rgba(61, 57, 57, 0.9); co
   transform: scale(1.2);
   filter: brightness(1.5);
 }
+/* SERVICES SECTION NEW DESIGN */
+.services-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.service-card {
+  flex: 1 1 250px;
+  background: rgba(42,42,42,0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #444;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.service-card h3 {
+  color: #ff00cc;
+  margin-bottom: 10px;
+}
 
