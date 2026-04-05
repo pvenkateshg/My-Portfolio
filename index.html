@@ -260,7 +260,7 @@ form.addEventListener('submit', function(e) {
   const email = document.getElementById('email').value;
 
   // 🔥 Data Google Form ki pampadam (→ Sheet lo save avuthundi)
-  fetch("https://docs.google.com/forms/d/e/1FAIpQLSc67zYJJSlpBGBoCo6nGSgyeaEor0MENHcGqRf7ZVYc_r2ZUw/formResponse?usp=pp_url&entry.1120810712=Nani&entry.1358448956=test@gmail.com", {
+  fetch("https://docs.google.com/forms/d/e/1FAIpQLSc67zYJJSlpBGBoCo6nGSgyeaEor0MENHcGqRf7ZVYc_r2ZUw/formResponse?", {
     method: "POST",
     mode: "no-cors",
     headers: {
